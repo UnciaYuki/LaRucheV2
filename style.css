@@ -1,22 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=WindSong:wght@400;500&display=swap');
 
+/* Utilisé pour toute la page (quasiment) */
 * {
+    margin: 0;
+    padding: 0;
     font-family: "Inter", sans-serif;
-}
-
-/* Background Orange */
-.bgorange {
-    background-color: #F3C827;
-}
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.navhd {
-    width: 50px;
 }
 
 /* Enlever le soulignement des liens */
@@ -25,6 +14,32 @@ a {
     color: black
 }
 
+li {
+    list-style: none;
+}
+
+/* Background Jaune */
+.bgYellow {
+    background-color: #F3C827;
+}
+
+.paddingSection {
+    padding: 40px 0px;
+}
+.flex {
+    display: flex; /* Permet de rendre la boîte modulable/flexible */
+    flex-wrap: wrap; /* Permet de mettre les boîtes côte à côte et de les faire revenir à la ligne s'il y a plus de place dans la ligne */
+}
+
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.alignCenter{
+    align-items: center;
+}
+/* Paragraphe */
 .p {
     font-size: 16px;
     font-weight: 500;
@@ -32,52 +47,65 @@ a {
     text-align: start;
 }
 
-div {
-    background-color: #F3C827;
+
+.bold {
+    font-weight: 600;
 }
-/* Enlever les puces des listes et mise en forme*/
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    justify-content: space-evenly;
-    align-content: flex-start;
-    width: 59%
+/* Permet de contenir le contenu d'une section, utile pour les differents taille d'écran*/
+.container  {
+    max-width: 1000px;
+    width: 100%;
+    /* recentrer en terme de largeur*/
+    margin: auto; 
 }
 
+.btn {
+    background-color: #F66909;
+    border-radius:4px;
+    padding: 10px;
+    color: white;
+    display: inline-block; /* Prend certaines caractéristique de inline-block, dans ce cas le fit-content du inline et le retour à la ligne du block*/
+    margin-top: 15px;
+}
+
+h3 {
+    width: 100%;
+    color: #593E26;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 600;
+}
+/* HEADER */
+
+header {
+    padding: 15px;
+    /* background-color: blue; */
+}
+.navhd {
+    width: 50%;
+}
 
 /* Pour le bouton  panier */
 .panier {
     color: #F3C827;
-    margin-left: auto;
-    display: flex;
+    font-size: 25px;
 }
 
-h2 {
-    font-family: "WindSong";
+/* HERO */  
+.hero { 
+    height: 100vh;
+}
+.hero h2 {
+    font-family: "WindSong", cursive;
     font-size: 130px;
-    font-weight: 500;
-    line-height: 63px;
-    text-align: left;
-    color: #593E26;
-    margin: 0%;
-}
-
-.a2 {
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    border:4px solid #F66909; 
-        background-color: #F66909;
-    margin: 10px;
-    border-radius:4px;
+    font-weight: 500; /* Ajuster le gras */
 }
 
 h1 {
     font-size: 32px;
-    font-weight: 600;
-    line-height: 63px;
-    text-align: left;
-
 }
 
+/* Section Engagement */
+.pinline {
+    width: 45%;
+}
