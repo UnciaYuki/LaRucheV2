@@ -26,6 +26,7 @@ li {
 .paddingSection {
     padding: 40px 0px;
 }
+
 .flex {
     display: flex; /* Permet de rendre la boîte modulable/flexible */
     flex-wrap: wrap; /* Permet de mettre les boîtes côte à côte et de les faire revenir à la ligne s'il y a plus de place dans la ligne */
@@ -36,8 +37,12 @@ li {
     justify-content: space-between;
 }
 
-.alignCenter{
-    align-items: center;
+.spaceAround {
+    justify-content: space-around;
+}
+
+.columnCount{
+    column-count: 3;
 }
 /* Paragraphe */
 .p {
