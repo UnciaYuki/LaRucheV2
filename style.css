@@ -32,6 +32,9 @@ li {
     flex-wrap: wrap; /* Permet de mettre les boîtes côte à côte et de les faire revenir à la ligne s'il y a plus de place dans la ligne */
 }
 
+.ligne {
+    display: inline-block;
+}
 
 .spaceBetween {
     justify-content: space-between;
@@ -39,6 +42,14 @@ li {
 
 .spaceAround {
     justify-content: space-around;
+}
+
+.centerW {
+    justify-content: center;
+}
+
+.marginAuto {
+    margin: auto;
 }
 
 .columnCount{
@@ -81,6 +92,25 @@ h3 {
     font-weight: 600;
 }
 
+.width30 {
+    width: 30%;
+}
+
+.width50 {
+    width: 50%;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.width267 {
+    width: 279px;
+}
+
+
+
+
 /* HEADER */
 
 header {
@@ -114,4 +144,16 @@ h1 {
 /* Section Engagement */
 .pinline {
     width: 45%;
+}
+
+/* Section Nos Produits */
+
+.paddingCarte {
+    padding: 10px 9px 20px 9px;
+} 
+
+/* Section nos clients */
+
+.width120 {
+    width: 100px;
 }
